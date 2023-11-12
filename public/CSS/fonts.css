@@ -1,0 +1,9 @@
+@font-face {
+    font-family: liger;
+    src: url('../Fonts/liger.ttf')format('opentype');
+}
+
+@font-face {
+    font-family: mars;
+    src: url('../Fonts/Mars.ttf')format('opentype');
+}
