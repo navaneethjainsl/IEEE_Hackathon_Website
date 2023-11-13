@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/e4e0631c-e346-4a64-8c7c-b06c63397b4d/resourceGroups/emploEase_group/providers/Microsoft.Web/sites/Hackomania",
+    "appService.deploySubpath": "."
+}
