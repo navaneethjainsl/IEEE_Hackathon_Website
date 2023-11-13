@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="/CSS/fonts.css">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="/CSS/yourteam.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/fb05808423.js" crossorigin="anonymous"></script>
+    
+    <title>Your Team</title>
+</head>
+<body>
+    <!-- <section id="team-details"> -->
+        <div class="team-box">
+            <h1 id="title">Team Information</h1>
+            <form action="<%='/yourteam/' + currentUser._id + '' %>" method="post">
+                <div class="form-group ">
+                    <label for="teamname">Team Name</label>
+                    <input type="text" id="teamname" name="teamname" value="<%=groupData.teamName%>" disabled>
+                </div>
+                <%if(user1){%>
+                <div class="form-group ">
+                    <label for="participant1">Participant 1</label>
+                    <input type="String" id="participant1" name="participant1" value="<%=user1.name%>" disabled>
+                </div>
+                <%}%>
+                <%if(user2){%>
+                <div class="form-group ">
+                    <label for="participant2">Participant 2</label>
+                    <input type="String" id="participant2" name="participant2" value="<%=user2.name%>" disabled>
+                </div>
+                <%}%>
+                <%if(user3){%>
+                <div class="form-group ">
+                    <label for="participant3">Participant 3</label>
+                    <input type="String" id="participant3" name="participant3" value="<%=user3.name%>" disabled>
+                </div>
+                <%}%>
+                <%if(user4){%>
+                <div class="form-group ">
+                    <label for="participant4">Participant 4</label>
+                    <input type="String" id="participant4" name="participant4" value="<%=user4.name%>" disabled>
+                </div>
+                <%}%>
+                <div class="form-group ">
+                    <label for="projectLink">Project Link</label>
+                    <input type="String" id="projectLink" name="projectLink" value="<%=groupData.projectURL%>">
+                </div>
+
+                <div class="form-group submit">
+                    <input type="submit" id="signUp" name="signUp" value="Submit Solution">
+                </div>
+            </form>
+        </div>
+    <!-- </section> -->
+</body>
+</html>
