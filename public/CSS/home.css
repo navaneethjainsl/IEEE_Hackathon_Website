@@ -1,12 +1,64 @@
-.hackomania-title{
+
+
+/* Home */
+
+#hackomania-title{
+    margin: 20px;
+    padding: 5px;
+}
+
+
+#hackomania-title > h1{
     font-family: 'liger';
+    font-size: 3rem;
+    text-align: center;
+}
+
+#hackomania-description{
+    margin: 20px 5px;
+    padding: 10px 25px;
+}
+
+#register{
+    margin: 10px;
+    padding: 20px;
 }
 
 .register-btn{
-    font-family: 'mars';
-
+    font-family: 'mars'; 
+    border-radius: 20px;
+    padding: 10px;
 }
 
+/* .timer-div{
+    text-align: center;
+} */
+
+#timer{
+    border: 2px solid blue;
+    display: inline-block;
+    padding: 25px;
+    margin: 10px 25px;
+    border-radius: 20px;
+}
+
+.right-home{
+    text-align: center;
+}
+
+.card-div{
+    width: 360px;
+    border: 2px solid blue;
+    margin: 20px 5px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Agenda */
+.agenda-heading{
+    margin: 20px;
+    padding: 20px;
+}
 
 /* Contact Section */
 .container-fluid-local{
